@@ -10,7 +10,7 @@
   <meta property="og:description" content="Better evidence on the uptake of renewable technologies in UK housing and on their impact on property values. An ESRC-funded project at the Urban Big Data Centre, University of Glasgow." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://urbanbigdatacentre.github.io/merv/" />
-  <link rel="stylesheet" href="style.css?v=20260924d" />
+  <link rel="stylesheet" href="style.css?v=20260924e" />
 </head>
 <body id="top">
 
@@ -45,16 +45,18 @@
     <p class="event-meta">An 18-month project funded by the ESRC · Urban Big Data Centre, University of Glasgow · <span class="tbc">start and end dates TBC</span></p>
   </div>
 
-  <nav class="toc" id="TOC">
-    <h3>Contents</h3>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#team">Team &amp; partners</a></li>
-      <li><a href="#outputs">Outputs</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#funding">Funding &amp; contact</a></li>
-    </ul>
-  </nav>
+  <aside class="glance" aria-label="Project at a glance">
+    <a href="https://www.ukri.org/councils/esrc/"><img src="images/esrc_logo.png" alt="UKRI Economic and Social Research Council" /></a>
+    <dl>
+      <dt>Funder</dt><dd>ESRC · grant UKRI5675</dd>
+      <dt>Duration</dt><dd>18 months <span class="tbc">dates TBC</span></dd>
+      <dt>Lead</dt><dd><a href="https://www.ubdc.ac.uk/author/nick-bailey">Prof Nick Bailey</a></dd>
+      <dt>Team</dt><dd><a href="#team">Four investigators</a> at the Urban Big Data Centre</dd>
+      <dt>Host</dt><dd><a href="https://www.ubdc.ac.uk/">UBDC</a>, University of Glasgow</dd>
+      <dt>Contact</dt><dd><a href="mailto:nick.bailey@glasgow.ac.uk?subject=MERV%20project">nick.bailey@glasgow.ac.uk</a></dd>
+    </dl>
+    <a class="glance-vacancy" href="#vacancy">Vacancy open until 6 Oct 2026 →</a>
+  </aside>
 
   <div class="hero-pair">
     <figure>
@@ -254,8 +256,17 @@
   (function () {
     var btn = document.getElementById('back-to-top');
     function toggle() { btn.classList.toggle('show', window.scrollY > 600); }
-    window.addEventListener('scroll', toggle, { passive: true });
-    toggle();
+    // highlight the section currently in view in the navbar
+    var links = Array.prototype.slice.call(document.querySelectorAll('.nav-right a[href^="#"]'));
+    var sections = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+    function spy() {
+      var y = window.scrollY + 100, current = -1;
+      sections.forEach(function (sec, i) { if (sec && sec.offsetTop <= y) current = i; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) current = sections.length - 1;
+      links.forEach(function (a, i) { a.classList.toggle('active', i === current); });
+    }
+    window.addEventListener('scroll', function () { toggle(); spy(); }, { passive: true });
+    toggle(); spy();
     // close the mobile menu after choosing a section
     var box = document.getElementById('nav-toggle');
     document.querySelectorAll('.nav-right a').forEach(function (a) {
