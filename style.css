@@ -194,6 +194,12 @@ p, ul, ol { margin: 0 0 1em; }
 }
 
 /* ===== MERV additions ==================================================== */
+/* Vacancy notice: same callout, green accent so it reads as a separate box */
+.callout.vacancy {
+  border-left-color: #2e8b57;
+  background: rgba(46, 139, 87, 0.08);
+  margin-bottom: 1.2rem;
+}
 /* Draft placeholders — remove the .tbc spans once the facts are confirmed */
 .tbc {
   display: inline-block; background: #fff3cd; color: #7a5200;

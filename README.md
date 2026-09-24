@@ -16,6 +16,8 @@ Single page with anchor sections (linkable, e.g. `…/#outputs`):
 | `#news` | Dated one-line news items (same table style as the AGILE programme) |
 | `#funding` | ESRC / UBDC / University of Glasgow logos, grant number, contact, CC BY notice |
 
+The green vacancy box near the top (`#vacancy`) advertises the Research Associate post, which closes on 6 October 2026 — remove or replace it after that date (and update the RA line in Team and the News table).
+
 Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag — remove the span (and the `.tbc` rule in `style.css` if none are left) once the fact is confirmed.
 
 ## Images (`images/`)
@@ -23,8 +25,8 @@ Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag �
 - `ubdc_logo.svg` — from [ubdc.ac.uk](https://www.ubdc.ac.uk/) (navbar + funding logos).
 - `glasgow_logo.png` — University of Glasgow logo, taken from the MERV project summary document.
 - `esrc_logo.png` — UKRI / ESRC horizontal logo, from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UKRI_ESR_Council-Logo_Horiz-RGB.png) (uploaded by UKRI). Replace with the official file from the UKRI brand pack if preferred.
-- `hero-solar-crickhowell.jpg` — hero photo: rooftop solar panels on a house in Crickhowell, Wales, by Jaggery, [geograph.org.uk via Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Rooftop_solar_panels,_New_Road,_Crickhowell_-_geograph.org.uk_-_7219809.jpg). Attribution lives in the figure caption — keep it.
-- `hero-heat-pump.jpg` — alternative hero (not currently used): air source heat pump retrofit in Southend-on-Sea, by Southend-on-Sea Borough Council, [Wikimedia Commons, CC0](https://commons.wikimedia.org/wiki/File:Air_Source_Heat_Pump_-_Vailliant_aroTherm_Plus_on_a_terraced_house.jpg). Swap the `<figure>` in `index.html` to use it, or delete it.
+- `hero-home-energy.svg` — hero illustration (house with solar PV, heat pump, home battery and EV charging), drawn for this site; CC BY 4.0 like the rest of the page. Edit the SVG directly to change colours or labels.
+- `hero-solar-crickhowell.jpg` — alternative photographic hero (not currently used): rooftop solar panels on a house in Crickhowell, Wales, by Jaggery, [geograph.org.uk via Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Rooftop_solar_panels,_New_Road,_Crickhowell_-_geograph.org.uk_-_7219809.jpg). If you switch to it, credit it in the figure caption.
 
 ## Content source
 
