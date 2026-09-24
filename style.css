@@ -194,6 +194,23 @@ p, ul, ol { margin: 0 0 1em; }
 }
 
 /* ===== MERV additions ==================================================== */
+/* Two photos side by side under the illustrated hero */
+.hero-figure.has-pair { margin-bottom: 1rem; }
+.hero-pair {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin: 0 0 2rem;
+}
+.hero-pair figure { margin: 0; }
+.hero-pair img {
+  width: 100%; height: 230px; object-fit: cover; display: block; border-radius: 2px;
+}
+.hero-pair figcaption {
+  font-size: 13px; color: var(--muted-color); margin-top: 0.5em; line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .hero-pair { grid-template-columns: 1fr; }
+  .hero-pair img { height: 200px; }
+}
 /* Vacancy notice: same callout, green accent so it reads as a separate box */
 .callout.vacancy {
   border-left-color: #2e8b57;

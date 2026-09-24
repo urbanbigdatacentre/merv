@@ -26,6 +26,8 @@ Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag �
 - `glasgow_logo.png` — University of Glasgow logo, taken from the MERV project summary document.
 - `esrc_logo.png` — UKRI / ESRC horizontal logo, from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UKRI_ESR_Council-Logo_Horiz-RGB.png) (uploaded by UKRI). Replace with the official file from the UKRI brand pack if preferred.
 - `hero-home-energy.svg` — hero illustration (house with solar PV, heat pump, home battery and EV charging), drawn for this site; CC BY 4.0 like the rest of the page. Edit the SVG directly to change colours or labels.
+- `photo-uk-house-solar.jpg` — rooftop solar on a UK house, by Watt A Lot, [Unsplash](https://unsplash.com/photos/a-house-with-solar-panels-gqpuuF3a2tY) ([Unsplash License](https://unsplash.com/license): free to use, credit given in the caption). Shown in the two-up row under the hero.
+- `photo-home-solar-battery-ev.jpg` — night-time rendering of a home with rooftop solar, battery storage and an EV charging, by Zendure Power Station, [Unsplash](https://unsplash.com/photos/a-house-with-a-solar-panel-on-the-roof-tR8hkdt2VeU) (Unsplash License). Shown in the two-up row under the hero.
 - `hero-solar-crickhowell.jpg` — alternative photographic hero (not currently used): rooftop solar panels on a house in Crickhowell, Wales, by Jaggery, [geograph.org.uk via Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Rooftop_solar_panels,_New_Road,_Crickhowell_-_geograph.org.uk_-_7219809.jpg). If you switch to it, credit it in the figure caption.
 
 ## Content source
