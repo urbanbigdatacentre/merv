@@ -15,6 +15,7 @@
 }
 
 * { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
 html { scroll-behavior: smooth; }
 h1[id], h2[id], h3[id] { scroll-margin-top: 4.5rem; }
 
@@ -194,15 +195,14 @@ p, ul, ol { margin: 0 0 1em; }
 }
 
 /* ===== MERV additions ==================================================== */
-/* Two photos side by side under the illustrated hero */
-.hero-figure.has-pair { margin-bottom: 1rem; }
+/* Hero: two photos side by side */
 .hero-pair {
   display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-  margin: 0 0 2rem;
+  margin: 1.5rem 0 2rem;
 }
 .hero-pair figure { margin: 0; }
 .hero-pair img {
-  width: 100%; height: 230px; object-fit: cover; display: block; border-radius: 2px;
+  width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 2px;
 }
 .hero-pair figcaption {
   font-size: 13px; color: var(--muted-color); margin-top: 0.5em; line-height: 1.5;
