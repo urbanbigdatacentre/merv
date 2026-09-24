@@ -25,7 +25,7 @@ Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag �
 
 ## Images (`images/`)
 
-- `merv-logo.svg` — project logo: “MERV” wordmark (DIN Condensed Bold, converted to outlines, so it renders identically everywhere) plus the house icon (roof with a solar panel, heat pump inside); used in the navbar at 40px. `merv-logo-full.svg` adds the tagline “Measuring Renewables Uptake & Value” underneath (for slides, documents, social cards). `merv-icon.svg` is the house icon alone, used as the favicon. Regenerate all three with `scripts/build_logo.py` if you change the design. CC BY 4.0.
+- `merv-logo.svg` — project logo (house with a solar-panel roof and rising bars + “MERV” wordmark), drawn for this site, CC BY 4.0; used in the navbar at 40px. `merv-icon.svg` is the icon alone, used as the favicon. The wordmark uses the system font stack, so it renders slightly differently across operating systems. (A version modelled on a colleague’s sketch — condensed “MERV” with a heat-pump house — was tried on 24 Sep 2026 and reverted; see commit `aa58fd8`.) When you replace either file, bump the `?v=` query on its reference in `index.html` so cached copies refresh.
 - `ubdc_logo.svg` — from [ubdc.ac.uk](https://www.ubdc.ac.uk/) (navbar + funding logos).
 - `glasgow_logo.png` — University of Glasgow logo, taken from the MERV project summary document.
 - `esrc_logo.png` — UKRI / ESRC horizontal logo, from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UKRI_ESR_Council-Logo_Horiz-RGB.png) (uploaded by UKRI). Replace with the official file from the UKRI brand pack if preferred.
