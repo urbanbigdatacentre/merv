@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MERV — Measuring Renewables Uptake &amp; Value</title>
+  <meta name="description" content="MERV (Measuring Renewables Uptake &amp; Value) is an 18-month ESRC-funded project at the Urban Big Data Centre, University of Glasgow. It builds new measures of the uptake of heat pumps, heat networks, direct electric heating, solar PV and batteries in UK housing, and estimates the ‘green premiums’ these technologies attract in property values." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>" />
+  <meta property="og:title" content="MERV — Measuring Renewables Uptake &amp; Value" />
+  <meta property="og:description" content="Better evidence on the uptake of renewable technologies in UK housing and on their impact on property values. An ESRC-funded project at the Urban Big Data Centre, University of Glasgow." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://urbanbigdatacentre.github.io/merv/" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="site-nav">
+    <div class="nav-left">
+      <a class="logo" href="https://www.ubdc.ac.uk/">
+        <img src="images/ubdc_logo.svg" alt="Urban Big Data Centre logo" />
+      </a>
+      <a href="index.html" class="site-title">MERV</a>
+      <a class="nav-link" href="index.html">Home</a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-box" />
+    <label for="nav-toggle" class="nav-toggle" aria-label="Open menu">&#9776;</label>
+    <div class="nav-right">
+      <a class="nav-link" href="https://www.ubdc.ac.uk/">Urban Big Data Centre</a>
+      <a class="nav-link" href="https://www.gla.ac.uk/">University of Glasgow</a>
+      <a class="nav-link" href="https://www.ukri.org/councils/esrc/">ESRC</a>
+      <a class="nav-link nav-github" href="https://github.com/urbanbigdatacentre/merv" aria-label="Source code on GitHub">
+        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main class="article">
+
+  <div class="d-title">
+    <h1>Measuring Renewables Uptake &amp; Value</h1>
+    <p class="subtitle">MERV — better evidence on the uptake of renewable technologies in UK housing, and on what they do to property values</p>
+    <p class="event-meta">An 18-month project funded by the ESRC · Urban Big Data Centre, University of Glasgow · <span class="tbc">start and end dates TBC</span></p>
+  </div>
+
+  <nav class="toc" id="TOC">
+    <h3>Contents</h3>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#team">Team &amp; partners</a></li>
+      <li><a href="#outputs">Outputs</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#funding">Funding &amp; contact</a></li>
+    </ul>
+  </nav>
+
+  <figure class="hero-figure">
+    <img src="images/hero-solar-crickhowell.jpg" alt="Rooftop solar panels on a house in Crickhowell, Wales" />
+    <figcaption>Rooftop solar panels on a house in Crickhowell, Wales. Photo: <a href="https://commons.wikimedia.org/wiki/File:Rooftop_solar_panels,_New_Road,_Crickhowell_-_geograph.org.uk_-_7219809.jpg">Jaggery, geograph.org.uk via Wikimedia Commons, CC BY-SA 2.0</a>.</figcaption>
+  </figure>
+
+  <div class="callout">
+    <strong>MERV in one sentence.</strong> We combine administrative and ‘smart’ data to measure how far heat pumps,
+    heat networks, direct electric heating, solar panels and batteries have spread across UK housing, to explain why
+    uptake varies between places and households, and to test whether these technologies add to what homes sell for.
+  </div>
+
+  <h2 id="overview">Overview</h2>
+
+  <h3>Why it matters</h3>
+  <p>
+    There is no pathway to Net Zero without decarbonising heat in domestic buildings. Existing fossil-fuel heating
+    has to be replaced (retrofitting), and new homes need clean heating from the outset. Given their high
+    efficiencies, <strong>heat pumps</strong> are widely recognised as the best solution for the majority of
+    houses, with <strong>heat networks</strong> playing an important role for flats and higher-density housing.
+    Low-efficiency <strong>direct electric systems</strong> (storage and panel heaters) are sometimes installed to
+    minimise up-front costs, but they burden occupiers with higher running costs. <strong>Photovoltaic (PV)
+    panels</strong> and <strong>batteries</strong> also have a role to play in local power generation and demand
+    management. We use the term <em>renewables</em> to refer to these five technologies.
+  </p>
+
+  <h3>The challenge</h3>
+  <p>
+    Progress in the UK is slow. Despite national and devolved government targets for heat decarbonisation, the UK
+    lacks authoritative, transparent indicators of progress. Better measures would enable tracking at local as well
+    as national level, providing insights into barriers and enablers, and into social inequalities in the
+    transition.
+  </p>
+  <table class="stats">
+    <tr><th>Estimated share of dwellings with…</th><th class="num">UK</th><th class="num">EU</th></tr>
+    <tr><td>Heat pumps</td><td class="num">2%</td><td class="num">16%</td></tr>
+    <tr><td>Any form of clean heating</td><td class="num">9%</td><td class="num">–</td></tr>
+    <tr><td>Solar PV</td><td class="num">7%</td><td class="num">10%</td></tr>
+    <tr><td>Batteries</td><td class="num">1%</td><td class="num">–</td></tr>
+  </table>
+  <p>
+    High up-front costs discourage faster adoption. Evidence of ‘green premiums’ on house values for different
+    technologies could incentivise adoption, but is currently very weak. To be of value to property owners and
+    others, this evidence needs to capture variations in premiums across the housing stock and over time, while
+    minimising the risk of bias (the ‘omitted variables’ problem).
+  </p>
+
+  <h3>Research questions</h3>
+  <ol>
+    <li>How far has the uptake of the five renewable technologies progressed across the UK housing stock, and how can it be measured consistently at property and small-area level?</li>
+    <li>How does uptake vary with property, social and locational characteristics — and what does this tell us about barriers, enablers and inequalities in the transition?</li>
+    <li>Do renewables attract a ‘green premium’ in sale prices, and how does this vary by technology, property type, location and over time?</li>
+    <li>How robust are green-premium estimates to unobserved differences in property quality, and can measures of quality derived from interior images reduce this bias?</li>
+  </ol>
+
+  <h3>Objectives</h3>
+  <p>
+    MERV aims to provide better evidence of the uptake of renewable technologies in UK housing and of the varied
+    impact of these on property values. Our five objectives are:
+  </p>
+  <ol class="objectives">
+    <li><strong>New measures of uptake.</strong> Develop new measures of renewables uptake through a novel combination of administrative and ‘smart’ data sources. Measures will be at property level, aggregated to various spatial units.</li>
+    <li><strong>Explaining variation.</strong> Model variations in uptake in relation to property, social and locational characteristics, adding to knowledge on barriers to, and enablers of, uptake. These models also provide measures of progress for local authorities which account for the different contexts and challenges in each.</li>
+    <li><strong>Green premiums.</strong> Link uptake to sales prices to identify green premiums for different renewable technologies, estimating variations by property type, location and over time using traditional hedonic and causal machine-learning models.</li>
+    <li><strong>Omitted variables.</strong> Explore potential ‘omitted variables’ problems in estimates of green premiums using novel measures of property quality derived from internal images with computer-vision models.</li>
+    <li><strong>Knowledge exchange.</strong> Disseminate results to relevant stakeholders through knowledge-exchange reports and events which promote key findings and the use of our novel datasets.</li>
+  </ol>
+
+  <h3>Timeline</h3>
+  <p class="note">The project runs for 18 months. The phasing below is indicative and will be updated as work progresses. <span class="tbc">draft — phases to be confirmed</span></p>
+  <table class="schedule">
+    <tr><td>Months 1–6</td><td>Data assembly and linkage; first property-level measures of renewables uptake<br /><span class="who">Objective 1</span></td></tr>
+    <tr><td>Months 4–12</td><td>Modelling variations in uptake; progress measures for local authorities<br /><span class="who">Objective 2</span></td></tr>
+    <tr><td>Months 7–15</td><td>Estimating green premiums with hedonic and causal machine-learning models<br /><span class="who">Objective 3</span></td></tr>
+    <tr><td>Months 10–16</td><td>Property-quality measures from interior images; robustness of premium estimates<br /><span class="who">Objective 4</span></td></tr>
+    <tr><td>Months 12–18</td><td>Knowledge exchange: reports, policy briefs, stakeholder events and data release<br /><span class="who">Objective 5</span></td></tr>
+  </table>
+
+  <h3>Applications and benefits</h3>
+  <ul>
+    <li><strong>Local government and partners.</strong> Small-area measures of renewables progress provide valuable input to the local strategies for heat decarbonisation or energy-demand reduction which they coordinate or deliver. Our measures show how each area is progressing given the particular challenges or constraints it faces.</li>
+    <li><strong>National and devolved governments.</strong> Our measures can be used to monitor overall progress with Net Zero strategies, to target additional support on the basis of evidence, and to evaluate interventions.</li>
+    <li><strong>Lenders and valuers.</strong> Evidence on green premiums will help property professionals value dwellings and assess risks.</li>
+    <li><strong>Property owners, purchasers and installers.</strong> Owners and potential purchasers making investment decisions on retrofit, and installers delivering renewables solutions, will benefit from clearer evidence on the value of each technology.</li>
+  </ul>
+
+  <h2 id="team">Team &amp; partners</h2>
+  <p>
+    MERV is led from the <a href="https://www.ubdc.ac.uk/">Urban Big Data Centre (UBDC)</a>, an ESRC-funded
+    centre of excellence in data-driven urban research based in Urban Studies &amp; Social Policy at the
+    <a href="https://www.gla.ac.uk/">University of Glasgow</a>.
+  </p>
+  <ul class="team">
+    <li><a href="https://www.ubdc.ac.uk/author/nick-bailey">Prof Nick Bailey</a> <span class="role">— Principal Investigator</span></li>
+    <li><a href="https://www.ubdc.ac.uk/author/david-mcarthur">Prof David McArthur</a> <span class="role">— Co-Investigator</span></li>
+    <li><a href="https://www.ubdc.ac.uk/author/qunshan-zhao">Prof Qunshan Zhao</a> <span class="role">— Co-Investigator</span></li>
+    <li><a href="https://www.ubdc.ac.uk/author/michail-georgiou">Dr Michail Georgiou</a> <span class="role">— Co-Investigator</span></li>
+    <li>Research Associate <span class="role">— <span class="tbc">to be announced</span></span></li>
+  </ul>
+
+  <h3>Partners and stakeholders</h3>
+  <p>
+    The project works with the people who will use its measures and evidence: local authorities responsible for
+    local heat and energy strategies, national and devolved governments monitoring progress towards Net Zero, and
+    property professionals — lenders, valuers and retrofit installers — who need robust evidence on the value of
+    renewables. Partner organisations will be listed here. <span class="tbc">partners to be confirmed</span>
+  </p>
+
+  <h2 id="outputs">Outputs</h2>
+  <p class="note">
+    MERV has only just started, so this section is mostly empty for now. Papers, data, code and policy briefs
+    will be added here as they are released; wherever possible, outputs will be open access.
+  </p>
+
+  <h3>Papers</h3>
+  <ul class="outputs">
+    <li class="empty">No project papers yet.</li>
+  </ul>
+
+  <h3>Data</h3>
+  <ul class="outputs">
+    <li>Property-level and small-area measures of renewables uptake for the UK — to be released through the <a href="https://data.ubdc.ac.uk/">UBDC Data Service</a> where licensing allows. <span class="meta">In preparation.</span></li>
+  </ul>
+
+  <h3>Code</h3>
+  <ul class="outputs">
+    <li>Code for constructing the uptake measures and for the green-premium models will be published on the <a href="https://github.com/urbanbigdatacentre">UBDC GitHub</a> under an open licence. <span class="meta">In preparation.</span></li>
+  </ul>
+
+  <h3>Policy briefs and reports</h3>
+  <ul class="outputs">
+    <li>Knowledge-exchange reports and briefings for local and national government and the property sector, accompanying stakeholder events (Objective 5). <span class="meta">Planned.</span></li>
+  </ul>
+
+  <h3>Related earlier work</h3>
+  <ul class="outputs">
+    <li>Ou, Y., Bailey, N., McArthur, D. &amp; Zhao, Q. (2026). Willingness-to-pay for energy efficient homes: New insights from the 2022 energy crisis in the United Kingdom. <em>Energy Research &amp; Social Science</em>. <a href="https://doi.org/10.1016/j.erss.2026.104700">doi:10.1016/j.erss.2026.104700</a></li>
+    <li>Sun, M., Han, C., Nie, Q., Xu, J., Zhang, F. &amp; Zhao, Q. (2022). Understanding building energy efficiency with administrative and emerging urban big data by deep learning in Glasgow. <em>Energy and Buildings</em>. <a href="https://doi.org/10.1016/j.enbuild.2022.112331">doi:10.1016/j.enbuild.2022.112331</a></li>
+    <li>UBDC impact story: <a href="https://www.ubdc.ac.uk/impact-story/how-do-solar-panels-affect-property-prices-in-the-uk">How do solar panels affect property prices in the UK?</a> — a machine-learning analysis of 1.5 million UK property listings held by UBDC.</li>
+  </ul>
+
+  <h2 id="news">News</h2>
+  <table class="schedule news">
+    <tr><td>24 Sep 2026</td><td>Project website launched.</td></tr>
+    <tr><td><span class="tbc">TBC</span> 2026</td><td>MERV starts: an 18-month ESRC award to the Urban Big Data Centre, University of Glasgow.</td></tr>
+  </table>
+
+  <h2 id="funding">Funding &amp; contact</h2>
+  <div class="sponsors logos">
+    <a href="https://www.ukri.org/councils/esrc/"><img class="logo-wide" src="images/esrc_logo.png" alt="UKRI Economic and Social Research Council" /></a>
+    <a href="https://www.ubdc.ac.uk/"><img src="images/ubdc_logo.svg" alt="Urban Big Data Centre" /></a>
+    <a href="https://www.gla.ac.uk/"><img src="images/glasgow_logo.png" alt="University of Glasgow" /></a>
+  </div>
+  <p>
+    MERV is funded by the <a href="https://www.ukri.org/councils/esrc/">Economic and Social Research Council (ESRC)</a>,
+    part of UK Research and Innovation, under grant reference <strong>UKRI5675</strong>. The project is hosted by the
+    <a href="https://www.ubdc.ac.uk/">Urban Big Data Centre</a> at the <a href="https://www.gla.ac.uk/">University of Glasgow</a>.
+  </p>
+  <p>
+    Questions about the project? Contact the Principal Investigator, <strong>Prof Nick Bailey</strong>, at
+    <a href="mailto:nick.bailey@glasgow.ac.uk?subject=MERV%20project">nick.bailey@glasgow.ac.uk</a>.
+  </p>
+
+  <div class="appendix">
+    <h3>Reuse</h3>
+    <p>
+      Text and figures on this page are licensed under
+      <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>.
+      Source code is available at <a href="https://github.com/urbanbigdatacentre/merv">github.com/urbanbigdatacentre/merv</a>.
+      Photographs reused from other sources are credited in their captions and carry their own licences; the
+      ESRC, UBDC and University of Glasgow logos are the property of their owners and are not covered by the CC BY licence.
+    </p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <p>MERV · Urban Big Data Centre, University of Glasgow · Funded by the <a href="https://www.ukri.org/councils/esrc/">ESRC</a> (UKRI5675)</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* ===== MERV — Measuring Renewables Uptake & Value — distill-style theme ==
+   Same look as the AGILE PhD School 2026 site (urbanbigdatacentre.github.io/
+   agilephdschool2026): white fixed navbar, #1277A7 links, 50px black title,
+   floating TOC, system sans typography, #0F2E3D dark footer.
+========================================================================== */
+:root {
+  --primary-color: #1277a7;
+  --title-color: #000000;
+  --body-color: rgba(0, 0, 0, 0.8);
+  --muted-color: rgba(0, 0, 0, 0.6);
+  --rule-color: rgba(0, 0, 0, 0.1);
+  --footer-bkgd: #0f2e3d;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+h1[id], h2[id], h3[id] { scroll-margin-top: 4.5rem; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.06rem;
+  line-height: 1.7;
+  color: var(--body-color);
+  background: #fff;
+}
+
+a { color: var(--primary-color); text-decoration: none; }
+a:hover { color: #000; text-decoration: underline; }
+
+/* ===== Fixed site header (white, like 2024) ============================== */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--rule-color);
+}
+.site-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; min-height: 56px; flex-wrap: wrap;
+}
+.nav-left, .nav-right { display: flex; align-items: center; gap: 18px; }
+.logo img { height: 40px; display: block; }
+.site-title {
+  font-size: 18px; font-weight: 600; color: var(--primary-color);
+}
+.nav-link { font-size: 15px; color: var(--primary-color); }
+.site-title:hover, .nav-link:hover { color: #000; text-decoration: none; }
+.nav-github { display: inline-flex; align-items: center; }
+.nav-toggle-box, .nav-toggle { display: none; }
+
+/* ===== Article layout: centered text column ============================== */
+.article {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 56px 24px 40px; /* top offset for fixed header */
+}
+
+.d-title { padding: 4.5rem 0 1rem; }
+.d-title h1 {
+  font-size: 50px; font-weight: 700; line-height: 1.1;
+  color: var(--title-color); margin: 0 0 0.6rem;
+}
+.subtitle {
+  font-size: 1.45rem; line-height: 1.4; color: var(--muted-color);
+  margin: 0 0 0.8rem;
+}
+.event-meta { font-size: 1rem; color: var(--muted-color); margin: 0; }
+
+/* ===== Floating TOC (left gutter on wide screens, inline box otherwise) == */
+.toc { font-size: 15px; line-height: 1.55; }
+.toc h3 {
+  font-size: 15px; font-weight: 500; color: rgba(0, 0, 0, 0.65);
+  margin: 0 0 0.4em; text-transform: none;
+}
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc li { margin: 0.25em 0; }
+.toc a { color: var(--body-color); }
+.toc a:hover { color: var(--primary-color); text-decoration: none; }
+/* inline box (default, narrow screens) */
+.toc {
+  border: 1px solid var(--rule-color); border-radius: 4px;
+  padding: 14px 18px; margin: 1.5rem 0;
+}
+@media (min-width: 1250px) {
+  .toc {
+    position: fixed;
+    top: 110px;
+    left: calc(50% - 365px - 240px);
+    width: 200px;
+    border: none; padding: 0; margin: 0;
+    font-size: 13px;
+  }
+  .toc h3 { font-size: 14px; }
+}
+
+/* ===== Hero figure & callout ============================================ */
+.hero-figure { margin: 1.5rem 0 2rem; }
+.hero-figure img { width: 100%; height: auto; display: block; border-radius: 2px; }
+.hero-figure figcaption {
+  font-size: 13px; color: var(--muted-color); margin-top: 0.5em; line-height: 1.5;
+}
+.callout {
+  background: rgba(18, 119, 167, 0.07);
+  border-left: 4px solid var(--primary-color);
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 2.5rem;
+}
+
+/* ===== Headings & text =================================================== */
+h2 {
+  font-size: 24px; font-weight: 700; color: rgba(0, 0, 0, 0.85);
+  margin: 2.6rem 0 0.9rem; line-height: 1.25;
+  border-top: 1px solid var(--rule-color); padding-top: 2.2rem;
+}
+h3 { font-size: 19px; font-weight: 600; color: rgba(0, 0, 0, 0.85); margin: 1.8rem 0 0.6rem; }
+p, ul, ol { margin: 0 0 1em; }
+.note { font-style: italic; color: var(--muted-color); }
+
+/* ===== Programme tables ================================================== */
+.schedule {
+  width: 100%; border-collapse: collapse;
+  font-size: 0.97rem; margin: 0 0 1.4rem;
+}
+.schedule td {
+  padding: 0.5rem 0.6rem 0.5rem 0; border-top: 1px solid var(--rule-color);
+  vertical-align: top;
+}
+.schedule tr:last-child td { border-bottom: 1px solid var(--rule-color); }
+.schedule td:first-child {
+  white-space: nowrap; width: 7rem; color: var(--muted-color);
+  font-variant-numeric: tabular-nums;
+}
+.schedule .break { color: var(--muted-color); font-style: italic; }
+.who { color: var(--muted-color); font-size: 0.93em; }
+
+/* ===== People, sponsors, appendix, footer ================================ */
+.people { columns: 2; column-gap: 2.5rem; }
+.people li { break-inside: avoid; margin: 0.2rem 0; }
+
+.sponsors {
+  display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap;
+  margin: 1.2rem 0 0.5rem;
+}
+.sponsors img { height: 56px; width: auto; display: block; }
+.sponsors img.logo-lg { height: 92px; }
+.sponsor-text {
+  font-size: 1.15rem; font-weight: 700; line-height: 1.15;
+  color: rgba(0, 0, 0, 0.75); letter-spacing: 0.01em;
+}
+.sponsor-text span { display: block; font-weight: 400; }
+.sponsor-text:hover { color: var(--primary-color); text-decoration: none; }
+
+.appendix {
+  margin-top: 3.5rem; border-top: 1px solid var(--rule-color);
+  padding-top: 1.5rem; font-size: 0.85rem; color: var(--muted-color);
+  line-height: 1.6;
+}
+.appendix h3 {
+  font-size: 15px; font-weight: 500; color: rgba(0, 0, 0, 0.65);
+  margin: 1.2rem 0 0.3rem;
+}
+.appendix a { color: var(--muted-color); text-decoration: underline; }
+.appendix a:hover { color: var(--primary-color); }
+
+.site-footer {
+  background: var(--footer-bkgd);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px; text-align: center;
+  margin-top: 30px; padding: 30px 20px;
+}
+.site-footer a { color: #fff; text-decoration: underline; }
+
+/* ===== Mobile =========================================================== */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: block; cursor: pointer; font-size: 22px;
+    color: var(--primary-color); padding: 12px 4px;
+  }
+  .nav-left .nav-link { display: none; }
+  .site-title { font-size: 16px; }
+  .nav-right {
+    display: none; width: 100%; flex-direction: column;
+    align-items: flex-start; gap: 0; padding: 0 0 10px;
+  }
+  .nav-toggle-box:checked ~ .nav-right { display: flex; }
+  .nav-right .nav-link { padding: 8px 0; }
+  .d-title { padding-top: 3rem; }
+  .d-title h1 { font-size: 34px; }
+  .subtitle { font-size: 1.2rem; }
+  .people { columns: 1; }
+  .schedule td:first-child { width: 5.6rem; white-space: normal; }
+}
+
+/* ===== MERV additions ==================================================== */
+/* Draft placeholders — remove the .tbc spans once the facts are confirmed */
+.tbc {
+  display: inline-block; background: #fff3cd; color: #7a5200;
+  border: 1px solid #f0d58c; border-radius: 3px;
+  font-size: 0.78em; font-style: normal; font-weight: 600;
+  line-height: 1.5; padding: 0 0.45em; vertical-align: middle;
+}
+
+/* Team list: single column, name — role */
+.team { list-style: none; padding: 0; margin: 0 0 1.4em; }
+.team li { margin: 0.3rem 0; }
+.team .role { color: var(--muted-color); }
+
+/* Small statistics table (uptake figures) */
+.stats {
+  width: 100%; border-collapse: collapse;
+  font-size: 0.97rem; margin: 0.6rem 0 1.4rem;
+}
+.stats th, .stats td {
+  padding: 0.45rem 0.6rem 0.45rem 0; border-top: 1px solid var(--rule-color);
+  text-align: left; vertical-align: top;
+}
+.stats th { font-weight: 600; color: rgba(0, 0, 0, 0.85); border-top: none; }
+.stats tr:last-child td { border-bottom: 1px solid var(--rule-color); }
+.stats .num { text-align: right; width: 6rem; font-variant-numeric: tabular-nums; }
+
+/* Objectives: numbered with a little breathing room */
+.objectives li { margin: 0.45em 0; }
+
+/* Output lists */
+.outputs li { margin: 0.35em 0; }
+.outputs .meta { color: var(--muted-color); font-size: 0.93em; }
+.empty { color: var(--muted-color); font-style: italic; }
+
+/* Funder / host logos (reuses .sponsors sizing) */
+.logos img { height: 52px; }
+.logos img.logo-wide { height: 64px; }
