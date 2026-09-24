@@ -65,6 +65,7 @@ a:hover { color: #000; text-decoration: underline; }
   font-size: 50px; font-weight: 700; line-height: 1.1;
   color: var(--title-color); margin: 0 0 0.6rem;
 }
+.d-title .acro { color: var(--primary-color); }
 .subtitle {
   font-size: 1.45rem; line-height: 1.4; color: var(--muted-color);
   margin: 0 0 0.8rem;
@@ -253,6 +254,7 @@ p, ul, ol { margin: 0 0 1em; }
 .stats th { font-weight: 600; color: rgba(0, 0, 0, 0.85); border-top: none; }
 .stats tr:last-child td { border-bottom: 1px solid var(--rule-color); }
 .stats .num { text-align: right; width: 6rem; font-variant-numeric: tabular-nums; }
+.table-note { font-size: 0.85rem; margin: -1rem 0 1.4rem; }
 
 /* Objectives: numbered with a little breathing room */
 .objectives li { margin: 0.45em 0; }

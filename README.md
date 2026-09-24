@@ -25,15 +25,19 @@ Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag �
 
 ## Images (`images/`)
 
-- `merv-logo.svg` — project logo (house with a solar-panel roof and rising bars + “MERV” wordmark), drawn for this site, CC BY 4.0; used in the navbar at 40px. `merv-icon.svg` is the icon alone, used as the favicon. The wordmark uses the system font stack, so it renders slightly differently across operating systems.
+- `merv-logo.svg` — project logo: “MERV” wordmark (DIN Condensed Bold, converted to outlines, so it renders identically everywhere) plus the house icon (roof with a solar panel, heat pump inside); used in the navbar at 40px. `merv-logo-full.svg` adds the tagline “Measuring Renewables Uptake & Value” underneath (for slides, documents, social cards). `merv-icon.svg` is the house icon alone, used as the favicon. Regenerate all three with `scripts/build_logo.py` if you change the design. CC BY 4.0.
 - `ubdc_logo.svg` — from [ubdc.ac.uk](https://www.ubdc.ac.uk/) (navbar + funding logos).
 - `glasgow_logo.png` — University of Glasgow logo, taken from the MERV project summary document.
 - `esrc_logo.png` — UKRI / ESRC horizontal logo, from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UKRI_ESR_Council-Logo_Horiz-RGB.png) (uploaded by UKRI). Replace with the official file from the UKRI brand pack if preferred.
 - `photo-uk-house-solar.jpg` — rooftop solar on a UK house, by Watt A Lot, [Unsplash](https://unsplash.com/photos/a-house-with-solar-panels-gqpuuF3a2tY) ([Unsplash License](https://unsplash.com/license): free to use, credit given in the caption). One of the two hero photos (`.hero-pair`).
-- `photo-home-solar-battery-ev.jpg` — night-time rendering of a home with rooftop solar, battery storage and an EV charging, by Zendure Power Station, [Unsplash](https://unsplash.com/photos/a-house-with-a-solar-panel-on-the-roof-tR8hkdt2VeU) (Unsplash License). One of the two hero photos (`.hero-pair`).
+- `photo-heat-pump-uk.jpg` — air source heat pump beside a house near Cambridge, England, by Andrew Fogg, [Flickr via Wikimedia Commons, CC BY 2.0](https://commons.wikimedia.org/wiki/File:Fridge_in_reverse_(51398066663).jpg); resized to 1200 px. One of the two hero photos (`.hero-pair`); credit lives in the caption.
 - `hero-solar-crickhowell.jpg` — alternative hero photo (not currently used): rooftop solar panels on a house in Crickhowell, Wales, by Jaggery, [geograph.org.uk via Wikimedia Commons, CC BY-SA 2.0](https://commons.wikimedia.org/wiki/File:Rooftop_solar_panels,_New_Road,_Crickhowell_-_geograph.org.uk_-_7219809.jpg). If you switch to it, credit it in the figure caption.
 
 An illustrated hero (flat SVG of a house with solar PV, heat pump, battery and EV) was used briefly and removed on 24 Sep 2026; it can be restored from git history (commit `82f6b23`, `images/hero-home-energy.svg`).
+
+## Title convention
+
+The page title capitalises exactly the letters that form the acronym, as in the project summary: “**ME**asuring **R**enewables uptake & **V**alue (MERV)” — the acronym letters are also coloured blue (`.acro`). Keep “uptake” lower-case if you edit the title.
 
 ## Content source
 
