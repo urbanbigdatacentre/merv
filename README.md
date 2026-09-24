@@ -4,7 +4,7 @@ Project website for **MERV (Measuring Renewables Uptake & Value)**, an 18-month 
 
 Built from the same template as the [AGILE PhD School 2026 site](https://urbanbigdatacentre.github.io/agilephdschool2026/) (R distill look: white fixed navbar, `#1277A7` links, floating table of contents, `#0F2E3D` dark footer) — a plain static site with no build tools. Edit [index.html](index.html) for content and [style.css](style.css) for styling, then push. When you change `style.css`, also bump the `?v=` query on the stylesheet link in `index.html` so browsers (GitHub Pages caches CSS for 10 minutes) pick up the new file.
 
-Navigation: the fixed navbar carries the MERV logo (links home), the page sections, UBDC and GitHub; on phones the sections collapse into the ☰ menu, which closes itself after a choice. A floating back-to-top button (bottom right) appears after scrolling past the hero; both behaviours live in the small script at the end of `index.html`.
+Navigation: the fixed navbar carries the MERV logo (links home), the page sections (the one currently in view is underlined), UBDC and GitHub; on phones the sections collapse into the ☰ menu, which closes itself after a choice. There is no separate table of contents. A floating back-to-top button (bottom right) appears after scrolling past the hero; both behaviours live in the small script at the end of `index.html`.
 
 ## Structure
 
@@ -12,6 +12,7 @@ Single page with anchor sections (linkable, e.g. `…/#outputs`):
 
 | Anchor | Content |
 |---|---|
+| (left gutter) | “At a glance” card (`<aside class="glance">`): ESRC logo, funder/grant, duration, lead, team, host, contact, vacancy link. Fixed in the left margin on screens ≥1250px, hidden otherwise — everything in it also appears in the page body. Update the dates and remove the vacancy line when they change. |
 | `#overview` | Why it matters, the challenge (uptake figures), research questions, five objectives, indicative timeline, applications and benefits |
 | `#team` | Investigators (linked to their UBDC profiles) and partners/stakeholders |
 | `#outputs` | Papers, data, code, policy briefs and reports, related earlier work |
