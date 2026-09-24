@@ -2,7 +2,9 @@
 
 Project website for **MERV (Measuring Renewables Uptake & Value)**, an 18-month ESRC-funded project (grant reference UKRI5675) led by Prof Nick Bailey at the Urban Big Data Centre, University of Glasgow, with Prof David McArthur, Prof Qunshan Zhao and Dr Michail Georgiou.
 
-Built from the same template as the [AGILE PhD School 2026 site](https://urbanbigdatacentre.github.io/agilephdschool2026/) (R distill look: white fixed navbar, `#1277A7` links, floating table of contents, `#0F2E3D` dark footer) — a plain static site with no build tools. Edit [index.html](index.html) for content and [style.css](style.css) for styling, then push.
+Built from the same template as the [AGILE PhD School 2026 site](https://urbanbigdatacentre.github.io/agilephdschool2026/) (R distill look: white fixed navbar, `#1277A7` links, floating table of contents, `#0F2E3D` dark footer) — a plain static site with no build tools. Edit [index.html](index.html) for content and [style.css](style.css) for styling, then push. When you change `style.css`, also bump the `?v=` query on the stylesheet link in `index.html` so browsers (GitHub Pages caches CSS for 10 minutes) pick up the new file.
+
+Navigation: the fixed navbar carries the MERV logo (links home), the page sections, UBDC and GitHub; on phones the sections collapse into the ☰ menu, which closes itself after a choice. A floating back-to-top button (bottom right) appears after scrolling past the hero; both behaviours live in the small script at the end of `index.html`.
 
 ## Structure
 
@@ -22,6 +24,7 @@ Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag �
 
 ## Images (`images/`)
 
+- `merv-logo.svg` — project logo (house with a solar-panel roof and rising bars + “MERV” wordmark), drawn for this site, CC BY 4.0; used in the navbar at 40px. `merv-icon.svg` is the icon alone, used as the favicon. The wordmark uses the system font stack, so it renders slightly differently across operating systems.
 - `ubdc_logo.svg` — from [ubdc.ac.uk](https://www.ubdc.ac.uk/) (navbar + funding logos).
 - `glasgow_logo.png` — University of Glasgow logo, taken from the MERV project summary document.
 - `esrc_logo.png` — UKRI / ESRC horizontal logo, from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:UKRI_ESR_Council-Logo_Horiz-RGB.png) (uploaded by UKRI). Replace with the official file from the UKRI brand pack if preferred.
