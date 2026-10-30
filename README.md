@@ -12,14 +12,12 @@ Single page with anchor sections (linkable, e.g. `…/#outputs`):
 
 | Anchor | Content |
 |---|---|
-| (left gutter) | “At a glance” card (`<aside class="glance">`): ESRC logo, funder/grant, duration, lead, team, host, contact, vacancy link. Fixed in the left margin on screens ≥1250px, hidden otherwise — everything in it also appears in the page body. Update the dates and remove the vacancy line when they change. |
+| (left gutter) | “At a glance” card (`<aside class="glance">`): ESRC logo, funder/grant, duration, lead, team, host, contact. Fixed in the left margin on screens ≥1250px, hidden otherwise — everything in it also appears in the page body. Update the dates when they are confirmed. |
 | `#overview` | Why it matters, the challenge (uptake figures), research questions, five objectives, indicative timeline, applications and benefits |
-| `#team` | Investigators (linked to their UBDC profiles) and partners/stakeholders |
+| `#team` | Investigators and the Research Associate (linked to their UBDC profiles), Innsbruck collaborator, partners/stakeholders |
 | `#outputs` | Papers, data, code, policy briefs and reports, related earlier work |
 | `#news` | Dated one-line news items (same table style as the AGILE programme) |
 | `#funding` | ESRC / UBDC / University of Glasgow logos, grant number, contact, CC BY notice |
-
-The green vacancy box near the top (`#vacancy`) advertises the Research Associate post, which closes on 6 October 2026 — remove or replace it after that date (and update the RA line in Team and the News table).
 
 Draft placeholders are marked with a yellow `<span class="tbc">…</span>` tag — remove the span (and the `.tbc` rule in `style.css` if none are left) once the fact is confirmed.
 

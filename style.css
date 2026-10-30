@@ -89,11 +89,6 @@ a:hover { color: #000; text-decoration: underline; }
 }
 .glance dd { margin: 1px 0 0; overflow-wrap: anywhere; }
 .glance .tbc { font-size: 0.85em; }
-.glance-vacancy {
-  display: inline-block; margin-top: 16px; padding: 4px 10px; border-radius: 4px;
-  background: rgba(46, 139, 87, 0.1); color: #2e8b57; font-size: 12px; font-weight: 600;
-}
-.glance-vacancy:hover { background: #2e8b57; color: #fff; text-decoration: none; }
 
 /* ===== Hero figure & callout ============================================ */
 .hero-figure { margin: 1.5rem 0 2rem; }
@@ -222,12 +217,6 @@ p, ul, ol { margin: 0 0 1em; }
 @media (max-width: 600px) {
   .hero-pair { grid-template-columns: 1fr; }
   .hero-pair img { height: 200px; }
-}
-/* Vacancy notice: same callout, green accent so it reads as a separate box */
-.callout.vacancy {
-  border-left-color: #2e8b57;
-  background: rgba(46, 139, 87, 0.08);
-  margin-bottom: 1.2rem;
 }
 /* Draft placeholders — remove the .tbc spans once the facts are confirmed */
 .tbc {
